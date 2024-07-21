@@ -100,6 +100,47 @@
         border-radius: 10px;
       }
 
+      .department {
+        background-color: white;
+        box-sizing: border-box;
+        height: 150px;
+        width: 50vw;
+        margin: 13px;
+        padding: 10px;
+        padding-left: 30px;
+        margin-bottom: 0;
+        border-radius: 10px;
+      }
+
+      .college {
+        background-color: white;
+        box-sizing: border-box;
+        height: 150px;
+        width: 50vw;
+        margin: 13px;
+        padding: 10px;
+        padding-left: 30px;
+        margin-bottom: 0;
+        border-radius: 10px;
+      }
+
+      select {
+    width: calc(100% - 60px); /* Adjust for padding and border */
+    padding: 8px;
+      }
+
+      .stream {
+        background-color: white;
+        box-sizing: border-box;
+        height: 150px;
+        width: 50vw;
+        margin: 13px;
+        padding: 8px;
+        padding-left: 30px;
+        margin-bottom: 0;
+        border-radius: 10px;
+      }
+
       .username {
         background-color: white;
         box-sizing: border-box;
@@ -197,7 +238,7 @@
         text-align: center;
       }
       @media only screen and (max-width: 1000px){
-        img, .main, .name, .usn, .gender, .email, .username, .password, .phone, .submit, .reset .rule, .policy, .Google {
+        img, .main, .name, .usn, .gender, .email, .username, .password, .phone, .department, .stream, .college, .submit, .reset .rule, .policy, .Google {
           width: 90vw;
         }
         img {
@@ -207,10 +248,10 @@
           height: 180px;
           font-size: 12px;
         }
-        .name, .usn, .gender, .email, .username, .password, .phone {
+        /* .name, .usn, .gender, .email, .username, .password, .phone, .department, .stream {
           height: 110px;
           font-size: 12px;
-        }
+        } */
 
         .main h1 {
           font-size: 18px;
@@ -284,6 +325,31 @@
         <input type="text" name="phone" id="phone" maxlength="10" required onkeyup="validatePhone(this)">
         <span id="phoneError" style="color: red; display: none;"></span>
       </div>
+
+      <div class="stream">
+        <h3>Stream <span style="color: red;">*</span></h3>
+        <select id="stream" name="stream" required>
+            <option value="">Select Stream</option>
+            <option value="BE">BE</option>
+            <option value="BTech">BTech</option>
+            <option value="BCA">BCA</option>
+            <option value="BSC">BSC</option>
+            <option value="Diploma">Diploma</option>
+        </select>
+        <!-- <div class="error-message" id="error-stream"></div> -->
+    </div>
+
+    <div class="college">
+      <h3>College <span style="color: red;">*</span></h3>
+      <input type="text" id="college" name="college" required>
+      <!-- <div class="error-message" id="error-college"></div> -->
+  </div>
+
+      <div class="department">
+        <h3>Department<span style="color: red;">*</span></h3>
+        <input type="text" id="department" name="department" required>
+        <!-- <div class="error-message" id="error-department"></div> -->
+    </div>
 
       <div class="username">
         <h3>User Name <span style="color: red;">*</span></h3>
