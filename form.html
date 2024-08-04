@@ -15,13 +15,25 @@
         box-sizing: border-box;
         background-color: #ede6f6;
       }
+
+      h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    unicode-bidi: isolate;
+}
+
       form {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       .main {
-        height: 230px;
+        height: 700px;
         width: 50vw;
         box-sizing: border-box;
         background-color: white;
@@ -263,13 +275,14 @@
       }
       @media only screen and (max-width: 1000px){
         img, .main, .name, .usn, .gender, .email, .username, .password, .phone, .department, .stream, .event, .college, .req, .submit, .reset .rule, .policy, .Google {
+          /* height: auto; */
           width: 90vw;
         }
         img {
           height: 125px;
         }
         .main {
-          height: 300px;
+          height: 1000px;
           font-size: 12px;
         }
         /* .name, .usn, .gender, .email, .username, .password, .phone, .department, .stream {
@@ -308,10 +321,26 @@
       <div class="main">
         <h1>Event Registration Form</h1>
         <hr />
-        <!-- <h3>Hello guys</h3> -->
-        <!-- <h3>Welcome to our event! To secure your spot, please fill out the registration form with your information, select your preferred event, and let us know if you have any special requirements. We're thrilled to have you join us and can't wait to see you there!</h3> -->
-        <h3><b>Note:<br>-Please don't apply many times,or your application will be considered as invalid </b></h3>
-        <h3 style="color: red;">* Required</h3>
+        <h3><b>Hello guys</b></h3>
+        <h3><b>Welcome to our event! To secure your spot, please fill out the registration form with your information, select your preferred event, and let us know if you have any special requirements. We're thrilled to have you join us and can't wait to see you there!</b></h3>
+        <h3><b>1. Code Masters Hackathon</b><br>
+          Join the ultimate coding showdown where teams race against the clock to develop groundbreaking software solutions. With access to mentors and resources, participants will tackle real-world problems, present their creations to a panel of judges, and compete for cash prizes and industry recognition.
+          <br>
+          <b>2. AI Innovation Challenge</b><br>
+          Test your skills in artificial intelligence by tackling a series of complex, real-world problems. Develop and present AI models and machine learning solutions, and compete for awards based on innovation, accuracy, and impact. Network with AI experts and showcase your abilities on a global stage.
+          <br>
+          <b>3. Cybersecurity Capture the Flag</b><br>
+          Engage in an intense cybersecurity competition where participants solve a series of security-related puzzles and challenges. From vulnerability exploitation to cryptography, you'll need sharp skills and quick thinking to outsmart your competitors and capture the flag. Prizes await the top performers!
+          <br>
+          <b>4. Robotics Engineering Showdown</b><br>
+          Design, build, and program robots to complete a series of challenging tasks in a dynamic arena. Compete against other teams in a test of engineering skill and creativity, with awards for performance, design, and innovation. Join us for an exciting display of robotic prowess and ingenuity.
+          <br>
+          <b>5. Tech Startups Pitch Competition</b><br>
+          Pitch your cutting-edge tech startup idea to a panel of expert judges and investors. Present your business model, demonstrate your technology, and answer tough questions to impress the panel. Compete for seed funding, mentorship, and the chance to turn your vision into a reality.</h3>
+        
+          <h3><b>Note:<br>1. Username and password are required for free registration login credentials
+            <br>2. Please don't apply many times,or your application will be considered as invalid </b></h3>
+        <h3 style="color: red;"><b>* Indicates Required</b></h3>
       </div>
       <div class="name">
         <h3>Full Name<span style="color: red;">*</span></h3>
